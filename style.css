@@ -1,0 +1,11 @@
+.card{
+  width: 276px;
+    height: 342px;
+    border-radius: 12px;
+    margin: 30px;
+    background-color: transparent;
+    perspective: 1000px;
+}
+.cardo{
+  display: flex;
+}

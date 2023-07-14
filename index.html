@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página de acceso único</title>
+  </head>
+  <body>
+    <h1 id="message"></h1>
+    <script>
+      let visited = document.cookie.split(";").find(cookie => cookie.startsWith("visited="));
+      if (visited) {
+        document.getElementById("message").textContent = "Ya has utilizado este código QR";
+      } else {
+        document.getElementById("message").textContent = "Bienvenido";
+        document.cookie = "visited=true";
+      }
+    </script>
+  </body>
+</html>
